@@ -3,73 +3,116 @@ marp: true
 title: Marp CLI example
 description: Hosting Marp slide deck on the web
 theme: uncover
+style: |
+    section{
+          font-size: 30px;
+    }
 paginate: true
 _paginate: false
 ---
 
-![bg](./assets/gradient.jpg)
+![bg](#123)
+![](#fff)
 
-# <!--fit--> Marp CLI example
-
-Hosting Marp slide deck on the web
-
-https://github.com/yhatt/marp-cli-example
-
-<style scoped>a { color: #eee; }</style>
-
-<!-- This is presenter note. You can write down notes through HTML comment. -->
+###### <!--fit--> Deploying Nomad jobs using a CI/CD pipeline
+![width:800px height:5cm](assets/tools.png)
 
 ---
-
-![Marp bg 60%](https://raw.githubusercontent.com/marp-team/marp/master/marp.png)
+![bg](#123)
+![](#fff)
+# What is Nomad?
+* A lightweight application orchestrator.
+* Can manage both containers as well as legacy applications.
+* Get started with [Nomad](https://learn.hashicorp.com/collections/nomad/get-started).
 
 ---
 
 ![bg](#123)
 ![](#fff)
 
-##### <!--fit--> [Marp CLI](https://github.com/marp-team/marp-cli) + [GitHub Pages](https://github.com/pages) | [Netlify](https://www.netlify.com/) | [Vercel](https://vercel.com/)
+# Why Nomad?
+* Increase hardware utilisation through a bin packing algorithm.
+* Reduce operational overhead.
 
-##### <!--fit--> 👉 The easiest way to host<br />your Marp deck on the web
-
----
-
-![bg right 60%](https://icongr.am/octicons/mark-github.svg)
-
-## **[GitHub Pages](https://github.com/pages)**
-
-#### Ready to write & host your deck!
-
-[![Use this as template h:1.5em](https://img.shields.io/badge/-Use%20this%20as%20template-brightgreen?style=for-the-badge&logo=github)](https://github.com/yhatt/marp-cli-example/generate)
 
 ---
 
-![bg right 60%](https://icongr.am/simple/netlify.svg?colored)
+##### Architecture of a typical Nomad cluster
 
-## **[Netlify](https://www.netlify.com/)**
+![width:800px height:12cm](assets/architecture.png)
 
-#### Ready to write & host your deck!
 
-[![Deploy to Netlify h:1.5em](./assets/netlify-deploy-button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/yhatt/marp-cli-example)
-
----
-
-![bg right 60%](https://icongr.am/simple/zeit.svg)
-
-## **[Vercel](https://vercel.com/)**
-
-#### Ready to write & host your deck!
-
-[![Deploy to Vercel h:1.5em](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/yhatt/marp-cli-example)
+![bg](#123)
+![](#fff)
 
 ---
+![bg](#123)
+![](#fff)
+##### What does each component do?
 
-### <!--fit--> :ok_hand:
+* Load balancer: Distributes incoming traffic across servers.
+* Nomad Servers: Distribute incoming workload based on Job specification and client capacity.
+* Nomad Clients: Execute workload.
 
 ---
+###### <!--fit--> The problem
 
-![bg 40% opacity blur](https://avatars1.githubusercontent.com/u/3993388?v=4)
+![bg](#123)
+![](#fff)
 
-### Created by Yuki Hattori ([@yhatt](https://github.com/yhatt))
+---
+##### How does a developer deploy Jobs that require underlying infrastructure to mutli-DC Nomad clusters?
 
-https://github.com/yhatt/marp-cli-example
+![width:700px height:12cm](assets/job.png)
+
+
+
+![bg](#123)
+![](#fff)
+
+---
+###### <!--fit--> Pipelines!
+![bg](#123)
+![](#fff)
+
+---
+#### Why Pipelines?
+* Provide dev, test and prod environments.
+* Deploy underlying infrastructure and build nomad variables file.
+* Dynamically construct Nomad job file based on variables and environment.
+* Stop dev, test Jobs and clean up infrastructure.
+* Manage secrets within pipeline.
+![bg](#123)
+![](#fff)
+
+---
+#### Pipeline overview
+
+![width:1100px height:9cm](assets/pipeline.png)
+
+![bg](#123)
+![](#fff)
+
+---
+###### <!--fit--> Demo time 🥳
+![bg](#123)
+![](#fff)
+
+---
+# Fun Fact
+* This presentation was built using Markdown and GitHub actions pipeline. If you would like to give it a try check [this repository](https://github.com/yhatt/marp-cli-example).
+![bg](#123)
+![](#fff)
+
+---
+# [Checkout my blog page](https://azdim.github.io) 🤓
+
+![width:1000px height:12cm](assets/blog.png)
+![bg](#123)
+![](#fff)
+
+---
+###### <!--fit--> Thank you
+![bg](#123)
+![](#fff)
+
