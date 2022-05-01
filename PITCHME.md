@@ -33,8 +33,19 @@ _paginate: false
 # Why Nomad?
 * Increase hardware utilisation through a bin packing algorithm.
 * Reduce operational overhead.
+* Easy to set up.
 
 
+---
+
+![bg](#123)
+![](#fff)
+
+## Nomad vs Kubernetes
+
+![width:800px height:12cm](assets/nomad_kube.png)
+
+###### source: [Nomad docs](https://www.nomadproject.io/docs/nomad-vs-kubernetes/supplement#supplement-to-kubernetes)
 ---
 
 ##### Architecture of a typical Nomad cluster
