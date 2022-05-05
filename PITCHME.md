@@ -20,22 +20,10 @@ _paginate: false
 ---
 ![bg](#123)
 ![](#fff)
-# What is Nomad?
+# What is [Nomad](https://www.hashicorp.com/solutions/workload-orchestration)?
 * A lightweight application orchestrator.
 * Can manage both containers as well as legacy applications.
 * Get started with [Nomad](https://learn.hashicorp.com/collections/nomad/get-started).
-
----
-
-![bg](#123)
-![](#fff)
-
-# Why Nomad?
-* Increase hardware utilisation through a bin packing algorithm.
-* Reduce operational overhead.
-* Easy to set up.
-
-
 ---
 
 ![bg](#123)
@@ -45,7 +33,7 @@ _paginate: false
 
 ![width:800px height:12cm](assets/nomad_kube.png)
 
-###### source: [Nomad docs](https://www.nomadproject.io/docs/nomad-vs-kubernetes/supplement#supplement-to-kubernetes)
+###### source: [Nomad docs](https://www.nomadproject.io/docs/nomad-vs-kubernetes#nomad-vs-kubernetes)
 ---
 
 ##### Architecture of a typical Nomad cluster
@@ -66,13 +54,23 @@ _paginate: false
 * Nomad Clients: Execute workload.
 
 ---
+![bg](#123)
+![](#fff)
+# Useful docs
+
+* [How do I know the number of servers?](https://www.nomadproject.io/docs/internals/consensus#raft-protocol-overview)
+* [How do servers and clients interact?](https://learn.hashicorp.com/tutorials/nomad/production-deployment-guide-vm-with-consul#overview)
+* [What drivers does Nomad support?](https://www.nomadproject.io/docs/drivers#task-drivers)
+* [What is a Nomad Job?](https://www.nomadproject.io/docs/job-specification#job-specification)
+
+---
 ###### <!--fit--> The problem
 
 ![bg](#123)
 ![](#fff)
 
 ---
-##### How does a developer deploy Jobs that require underlying infrastructure to mutli-DC Nomad clusters?
+##### How does a developer deploy Jobs that require underlying infrastructure to mutli-DC Nomad clusters and minimise downtime?
 
 ![width:700px height:12cm](assets/job.png)
 
