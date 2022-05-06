@@ -95,7 +95,7 @@ _paginate: false
 ![](#fff)
 
 ---
-#### Pipeline overview
+#### [Pipeline overview](https://excalidraw.com/#room=cf09ef76f2f233f01317,YQTHALCf_qRCrGKTpADqMg)
 
 ![width:1100px height:9cm](assets/pipeline.png)
 
